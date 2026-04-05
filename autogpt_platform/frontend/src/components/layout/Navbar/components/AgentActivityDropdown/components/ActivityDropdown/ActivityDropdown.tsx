@@ -93,7 +93,7 @@ export function ActivityDropdown({
                 />
                 <button
                   onClick={handleClearSearch}
-                  className="absolute right-1 top-1/2 flex h-6 w-6 -translate-y-1/2 items-center justify-center"
+                  className="absolute right-1 top-1/2 flex h-6 w-6 -translate-y-1/2 items-center justify-center rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500"
                   aria-label="Clear search"
                 >
                   <X size={16} className="text-gray-500" />

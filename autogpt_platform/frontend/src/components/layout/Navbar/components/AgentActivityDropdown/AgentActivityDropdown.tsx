@@ -26,9 +26,10 @@ export function AgentActivityDropdown() {
     <Popover open={isOpen} onOpenChange={setIsOpen}>
       <PopoverTrigger asChild>
         <button
-          className={`group relative h-[2.5rem] w-[2.5rem] rounded-full p-2 transition-colors hover:bg-white ${isOpen ? "bg-white" : ""}`}
+          className={`group relative h-[2.5rem] w-[2.5rem] rounded-full p-2 transition-colors hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 ${isOpen ? "bg-white" : ""}`}
           data-testid="agent-activity-button"
           aria-label="View Agent Activity"
+          aria-expanded={isOpen}
         >
           <Bell size={22} className="text-black" />
 
